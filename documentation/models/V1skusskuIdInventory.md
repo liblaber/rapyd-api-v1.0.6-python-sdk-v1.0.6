@@ -1,6 +1,6 @@
 # V1skusskuIdInventory
 
-inventory object {quantity, type, value}
+inventory object `{quantity, type, value}`
 
 **Properties**
 
