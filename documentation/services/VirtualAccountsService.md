@@ -20,9 +20,9 @@ Issue a virtual account number to an existing wallet.
 
 **Parameters**
 
-| Name         | Type                                                          | Required | Description       |
-| :----------- | :------------------------------------------------------------ | :------- | :---------------- |
-| request_body | `[V1VirtualAccountsBody](../models/V1VirtualAccountsBody.md)` | ✅       | The request body. |
+| Name         | Type                                                        | Required | Description       |
+| :----------- | :---------------------------------------------------------- | :------- | :---------------- |
+| request_body | [V1VirtualAccountsBody](../models/V1VirtualAccountsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -63,9 +63,9 @@ Simulate a deposit to a virtual account number that was issued to a wallet. This
 
 **Parameters**
 
-| Name         | Type                                                                              | Required | Description       |
-| :----------- | :-------------------------------------------------------------------------------- | :------- | :---------------- |
-| request_body | `[VirtualAccountsTransactionsBody](../models/VirtualAccountsTransactionsBody.md)` | ✅       | The request body. |
+| Name         | Type                                                                            | Required | Description       |
+| :----------- | :------------------------------------------------------------------------------ | :------- | :---------------- |
+| request_body | [VirtualAccountsTransactionsBody](../models/VirtualAccountsTransactionsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -134,10 +134,10 @@ Update Receiving Currency
 
 **Parameters**
 
-| Name               | Type                                                                                      | Required | Description                                                              |
-| :----------------- | :---------------------------------------------------------------------------------------- | :------- | :----------------------------------------------------------------------- |
-| request_body       | `[VirtualAccountsVirtualAccountIdBody](../models/VirtualAccountsVirtualAccountIdBody.md)` | ✅       | The request body.                                                        |
-| virtual_account_id | `str`                                                                                     | ✅       | ID of the Virtual Account Number object. String starting with issuing\_. |
+| Name               | Type                                                                                    | Required | Description                                                              |
+| :----------------- | :-------------------------------------------------------------------------------------- | :------- | :----------------------------------------------------------------------- |
+| request_body       | [VirtualAccountsVirtualAccountIdBody](../models/VirtualAccountsVirtualAccountIdBody.md) | ✅       | The request body.                                                        |
+| virtual_account_id | `str`                                                                                   | ✅       | ID of the Virtual Account Number object. String starting with issuing\_. |
 
 **Return Type**
 

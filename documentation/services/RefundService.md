@@ -58,9 +58,9 @@ Refund of a payment. The refund is credited against a specific payment. The mone
 
 **Parameters**
 
-| Name         | Type                                          | Required | Description       |
-| :----------- | :-------------------------------------------- | :------- | :---------------- |
-| request_body | `[V1RefundsBody](../models/V1RefundsBody.md)` | ✅       | The request body. |
+| Name         | Type                                        | Required | Description       |
+| :----------- | :------------------------------------------ | :------- | :---------------- |
+| request_body | [V1RefundsBody](../models/V1RefundsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -103,9 +103,9 @@ Simulate the action of a third party that is required for completing the refund 
 
 **Parameters**
 
-| Name         | Type                                                      | Required | Description       |
-| :----------- | :-------------------------------------------------------- | :------- | :---------------- |
-| request_body | `[RefundsCompleteBody](../models/RefundsCompleteBody.md)` | ✅       | The request body. |
+| Name         | Type                                                    | Required | Description       |
+| :----------- | :------------------------------------------------------ | :------- | :---------------- |
+| request_body | [RefundsCompleteBody](../models/RefundsCompleteBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -140,9 +140,9 @@ Refund a group payment when the status of the group payment is closed. The refun
 
 **Parameters**
 
-| Name         | Type                                                                | Required | Description       |
-| :----------- | :------------------------------------------------------------------ | :------- | :---------------- |
-| request_body | `[RefundsGroupPaymentsBody](../models/RefundsGroupPaymentsBody.md)` | ✅       | The request body. |
+| Name         | Type                                                              | Required | Description       |
+| :----------- | :---------------------------------------------------------------- | :------- | :---------------- |
+| request_body | [RefundsGroupPaymentsBody](../models/RefundsGroupPaymentsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -210,10 +210,10 @@ Change or modify the metadata in a refund object.
 
 **Parameters**
 
-| Name         | Type                                                      | Required | Description                                                                    |
-| :----------- | :-------------------------------------------------------- | :------- | :----------------------------------------------------------------------------- |
-| request_body | `[RefundsRefundIdBody](../models/RefundsRefundIdBody.md)` | ✅       | The request body.                                                              |
-| refund_id    | `str`                                                     | ✅       | ID of the 'refund' object you want to retrieve. String starting with refund\_. |
+| Name         | Type                                                    | Required | Description                                                                    |
+| :----------- | :------------------------------------------------------ | :------- | :----------------------------------------------------------------------------- |
+| request_body | [RefundsRefundIdBody](../models/RefundsRefundIdBody.md) | ✅       | The request body.                                                              |
+| refund_id    | `str`                                                   | ✅       | ID of the 'refund' object you want to retrieve. String starting with refund\_. |
 
 **Return Type**
 

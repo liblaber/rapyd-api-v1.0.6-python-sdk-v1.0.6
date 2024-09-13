@@ -134,9 +134,9 @@ Create a payout (disbursement). This method triggers the Payout Created webhook.
 
 **Parameters**
 
-| Name         | Type                                          | Required | Description       |
-| :----------- | :-------------------------------------------- | :------- | :---------------- |
-| request_body | `[V1PayoutsBody](../models/V1PayoutsBody.md)` | ✅       | The request body. |
+| Name         | Type                                        | Required | Description       |
+| :----------- | :------------------------------------------ | :------- | :---------------- |
+| request_body | [V1PayoutsBody](../models/V1PayoutsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -190,9 +190,9 @@ Create a beneficiary for use in payouts. The response provides a unique benefici
 
 **Parameters**
 
-| Name         | Type                                                            | Required | Description       |
-| :----------- | :-------------------------------------------------------------- | :------- | :---------------- |
-| request_body | `[PayoutsBeneficiaryBody](../models/PayoutsBeneficiaryBody.md)` | ✅       | The request body. |
+| Name         | Type                                                          | Required | Description       |
+| :----------- | :------------------------------------------------------------ | :------- | :---------------- |
+| request_body | [PayoutsBeneficiaryBody](../models/PayoutsBeneficiaryBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -237,9 +237,9 @@ Validate the format of the details for a payout beneficiary. You can validate a 
 
 **Parameters**
 
-| Name         | Type                                                              | Required | Description       |
-| :----------- | :---------------------------------------------------------------- | :------- | :---------------- |
-| request_body | `[BeneficiaryValidateBody](../models/BeneficiaryValidateBody.md)` | ✅       | The request body. |
+| Name         | Type                                                            | Required | Description       |
+| :----------- | :-------------------------------------------------------------- | :------- | :---------------- |
+| request_body | [BeneficiaryValidateBody](../models/BeneficiaryValidateBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -409,9 +409,9 @@ Create a sender for use in payouts. The response provides a unique sender ID, wh
 
 **Parameters**
 
-| Name         | Type                                                  | Required | Description       |
-| :----------- | :---------------------------------------------------- | :------- | :---------------- |
-| request_body | `[PayoutsSenderBody](../models/PayoutsSenderBody.md)` | ✅       | The request body. |
+| Name         | Type                                                | Required | Description       |
+| :----------- | :-------------------------------------------------- | :------- | :---------------- |
+| request_body | [PayoutsSenderBody](../models/PayoutsSenderBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -607,10 +607,10 @@ Change or modify a payout. This method triggers the Payout Updated webhook. This
 
 **Parameters**
 
-| Name         | Type                                                      | Required | Description                                      |
-| :----------- | :-------------------------------------------------------- | :------- | :----------------------------------------------- |
-| request_body | `[PayoutsPayoutIdBody](../models/PayoutsPayoutIdBody.md)` | ✅       | The request body.                                |
-| payout_id    | `str`                                                     | ✅       | ID of the payout. String starting with payout\_. |
+| Name         | Type                                                    | Required | Description                                      |
+| :----------- | :------------------------------------------------------ | :------- | :----------------------------------------------- |
+| request_body | [PayoutsPayoutIdBody](../models/PayoutsPayoutIdBody.md) | ✅       | The request body.                                |
+| payout_id    | `str`                                                   | ✅       | ID of the payout. String starting with payout\_. |
 
 **Return Type**
 

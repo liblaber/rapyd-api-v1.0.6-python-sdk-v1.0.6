@@ -20,15 +20,15 @@ Retrieve the basic data of an invoice, with individual invoice lines.
 
 **Parameters**
 
-| Name           | Type                                | Required | Description                                                                                                                                                                                    |
-| :------------- | :---------------------------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| customer       | `[Customer](../models/Customer.md)` | ❌       | ID of the customer. String starting with cus\_.                                                                                                                                                |
-| date\_         | `str`                               | ❌       | Date that the invoice was created.                                                                                                                                                             |
-| due_date       | `str`                               | ❌       | The date payment is due on this invoice. This value is calculated from the date the invoice is created, plus the number of days specified in the days_until_due field. Format is in Unix time. |
-| ending_before  | `str`                               | ❌       | The ID of the invoice created after the last invoice you want to retrieve. card.                                                                                                               |
-| limit          | `str`                               | ❌       | The maximum number of invoices to return. Range 1-100. Default is 10.                                                                                                                          |
-| starting_after | `str`                               | ❌       | The ID of the invoice created before the first invoice you want to retrieve.                                                                                                                   |
-| subscription   | `bool`                              | ❌       | ID of the subscription. String starting with sub\_.                                                                                                                                            |
+| Name           | Type                              | Required | Description                                                                                                                                                                                    |
+| :------------- | :-------------------------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| customer       | [Customer](../models/Customer.md) | ❌       | ID of the customer. String starting with cus\_.                                                                                                                                                |
+| date\_         | `str`                             | ❌       | Date that the invoice was created.                                                                                                                                                             |
+| due_date       | `str`                             | ❌       | The date payment is due on this invoice. This value is calculated from the date the invoice is created, plus the number of days specified in the days_until_due field. Format is in Unix time. |
+| ending_before  | `str`                             | ❌       | The ID of the invoice created after the last invoice you want to retrieve. card.                                                                                                               |
+| limit          | `str`                             | ❌       | The maximum number of invoices to return. Range 1-100. Default is 10.                                                                                                                          |
+| starting_after | `str`                             | ❌       | The ID of the invoice created before the first invoice you want to retrieve.                                                                                                                   |
+| subscription   | `bool`                            | ❌       | ID of the subscription. String starting with sub\_.                                                                                                                                            |
 
 **Return Type**
 
@@ -321,10 +321,10 @@ Change or modify an invoice. You can modify the invoice when its status is draft
 
 **Parameters**
 
-| Name         | Type                                                          | Required | Description                                     |
-| :----------- | :------------------------------------------------------------ | :------- | :---------------------------------------------- |
-| request_body | `[InvoicesInvoiceIdBody](../models/InvoicesInvoiceIdBody.md)` | ❌       | The request body.                               |
-| invoice_id   | `str`                                                         | ✅       | The ID of the invoice that you want to updated. |
+| Name         | Type                                                        | Required | Description                                     |
+| :----------- | :---------------------------------------------------------- | :------- | :---------------------------------------------- |
+| request_body | [InvoicesInvoiceIdBody](../models/InvoicesInvoiceIdBody.md) | ❌       | The request body.                               |
+| invoice_id   | `str`                                                       | ✅       | The ID of the invoice that you want to updated. |
 
 **Return Type**
 
@@ -432,10 +432,10 @@ Make a payment against an invoice.
 
 **Parameters**
 
-| Name         | Type                                                | Required | Description                        |
-| :----------- | :-------------------------------------------------- | :------- | :--------------------------------- |
-| request_body | `[InvoiceIdPayBody](../models/InvoiceIdPayBody.md)` | ❌       | The request body.                  |
-| invoice_id   | `str`                                               | ✅       | ID of the invoice you want to pay. |
+| Name         | Type                                              | Required | Description                        |
+| :----------- | :------------------------------------------------ | :------- | :--------------------------------- |
+| request_body | [InvoiceIdPayBody](../models/InvoiceIdPayBody.md) | ❌       | The request body.                  |
+| invoice_id   | `str`                                             | ✅       | ID of the invoice you want to pay. |
 
 **Return Type**
 

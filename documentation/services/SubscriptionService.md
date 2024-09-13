@@ -68,9 +68,9 @@ Create a subscription for regular, automatic payments.
 
 **Parameters**
 
-| Name         | Type                                                                  | Required | Description       |
-| :----------- | :-------------------------------------------------------------------- | :------- | :---------------- |
-| request_body | `[PaymentsSubscriptionsBody](../models/PaymentsSubscriptionsBody.md)` | ✅       | The request body. |
+| Name         | Type                                                                | Required | Description       |
+| :----------- | :------------------------------------------------------------------ | :------- | :---------------- |
+| request_body | [PaymentsSubscriptionsBody](../models/PaymentsSubscriptionsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -582,10 +582,10 @@ Update the details of a subscription.
 
 **Parameters**
 
-| Name            | Type                                                                              | Required | Description                                         |
-| :-------------- | :-------------------------------------------------------------------------------- | :------- | :-------------------------------------------------- |
-| request_body    | `[SubscriptionsSubscriptionIdBody](../models/SubscriptionsSubscriptionIdBody.md)` | ✅       | The request body.                                   |
-| subscription_id | `str`                                                                             | ✅       | ID of the subscription. String starting with sub\_. |
+| Name            | Type                                                                            | Required | Description                                         |
+| :-------------- | :------------------------------------------------------------------------------ | :------- | :-------------------------------------------------- |
+| request_body    | [SubscriptionsSubscriptionIdBody](../models/SubscriptionsSubscriptionIdBody.md) | ✅       | The request body.                                   |
+| subscription_id | `str`                                                                           | ✅       | ID of the subscription. String starting with sub\_. |
 
 **Return Type**
 

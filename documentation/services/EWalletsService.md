@@ -33,9 +33,9 @@ Transfer funds between Rapyd Wallets.
 
 **Parameters**
 
-| Name         | Type                                                      | Required | Description       |
-| :----------- | :-------------------------------------------------------- | :------- | :---------------- |
-| request_body | `[AccountTransferBody](../models/AccountTransferBody.md)` | ✅       | The request body. |
+| Name         | Type                                                    | Required | Description       |
+| :----------- | :------------------------------------------------------ | :------- | :---------------- |
+| request_body | [AccountTransferBody](../models/AccountTransferBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -75,9 +75,9 @@ Respond to a funds transfer between wallets. The transferee uses this method to 
 
 **Parameters**
 
-| Name         | Type                                                        | Required | Description       |
-| :----------- | :---------------------------------------------------------- | :------- | :---------------- |
-| request_body | `[TransferResponseBody](../models/TransferResponseBody.md)` | ✅       | The request body. |
+| Name         | Type                                                      | Required | Description       |
+| :----------- | :-------------------------------------------------------- | :------- | :---------------- |
+| request_body | [TransferResponseBody](../models/TransferResponseBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -146,10 +146,10 @@ Add a personal contact to a company wallet or client wallet.
 
 **Parameters**
 
-| Name         | Type                                                          | Required | Description                                                                                  |
-| :----------- | :------------------------------------------------------------ | :------- | :------------------------------------------------------------------------------------------- |
-| request_body | `[EwalletIdContactsBody](../models/EwalletIdContactsBody.md)` | ✅       | The request body.                                                                            |
-| ewallet_id   | `str`                                                         | ✅       | ID of the Rapyd Wallet that this contact is associated with. String starting with ewallet\_. |
+| Name         | Type                                                        | Required | Description                                                                                  |
+| :----------- | :---------------------------------------------------------- | :------- | :------------------------------------------------------------------------------------------- |
+| request_body | [EwalletIdContactsBody](../models/EwalletIdContactsBody.md) | ✅       | The request body.                                                                            |
+| ewallet_id   | `str`                                                       | ✅       | ID of the Rapyd Wallet that this contact is associated with. String starting with ewallet\_. |
 
 **Return Type**
 
@@ -257,11 +257,11 @@ Update a contact for a Rapyd Wallet.
 
 **Parameters**
 
-| Name         | Type                              | Required | Description                                                                                  |
-| :----------- | :-------------------------------- | :------- | :------------------------------------------------------------------------------------------- |
-| request_body | `[Contact](../models/Contact.md)` | ✅       | The request body.                                                                            |
-| ewallet_id   | `str`                             | ✅       | ID of the Rapyd Wallet that this contact is associated with. String starting with ewallet\_. |
-| contact_id   | `str`                             | ✅       | ID of the contact. String starting with the prefix cont\_.                                   |
+| Name         | Type                            | Required | Description                                                                                  |
+| :----------- | :------------------------------ | :------- | :------------------------------------------------------------------------------------------- |
+| request_body | [Contact](../models/Contact.md) | ✅       | The request body.                                                                            |
+| ewallet_id   | `str`                           | ✅       | ID of the Rapyd Wallet that this contact is associated with. String starting with ewallet\_. |
+| contact_id   | `str`                           | ✅       | ID of the contact. String starting with the prefix cont\_.                                   |
 
 **Return Type**
 
@@ -489,9 +489,9 @@ Create a Rapyd Wallet.
 
 **Parameters**
 
-| Name         | Type                                            | Required | Description       |
-| :----------- | :---------------------------------------------- | :------- | :---------------- |
-| request_body | `[V1EwalletsBody](../models/V1EwalletsBody.md)` | ✅       | The request body. |
+| Name         | Type                                          | Required | Description       |
+| :----------- | :-------------------------------------------- | :------- | :---------------- |
+| request_body | [V1EwalletsBody](../models/V1EwalletsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -641,10 +641,10 @@ Change or modify a Rapyd Wallet.
 
 **Parameters**
 
-| Name          | Type                                                                | Required | Description                                       |
-| :------------ | :------------------------------------------------------------------ | :------- | :------------------------------------------------ |
-| request_body  | `[EwalletsEwalletTokenBody](../models/EwalletsEwalletTokenBody.md)` | ✅       | The request body.                                 |
-| ewallet_token | `str`                                                               | ✅       | ID of the wallet. String starting with ewallet\_. |
+| Name          | Type                                                              | Required | Description                                       |
+| :------------ | :---------------------------------------------------------------- | :------- | :------------------------------------------------ |
+| request_body  | [EwalletsEwalletTokenBody](../models/EwalletsEwalletTokenBody.md) | ✅       | The request body.                                 |
+| ewallet_token | `str`                                                             | ✅       | ID of the wallet. String starting with ewallet\_. |
 
 **Return Type**
 
@@ -717,10 +717,10 @@ Change Wallet Status
 
 **Parameters**
 
-| Name          | Type                                                                  | Required | Description                                                                                                                                                                                                          |
-| :------------ | :-------------------------------------------------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ewallet_token | `str`                                                                 | ✅       | ID of the Rapyd Wallet. String starting with ewallet\_. Required when phone number is not used.                                                                                                                      |
-| status        | `[UpdateEwalletStatusStatus](../models/UpdateEwalletStatusStatus.md)` | ✅       | Status of the wallet. One of the following: enable, disable, close. disable - Change to disabled status (DIS). close - Close the wallet. Changes the status to closed (CLO). enable - Change to active status (ACT). |
+| Name          | Type                                                                | Required | Description                                                                                                                                                                                                          |
+| :------------ | :------------------------------------------------------------------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ewallet_token | `str`                                                               | ✅       | ID of the Rapyd Wallet. String starting with ewallet\_. Required when phone number is not used.                                                                                                                      |
+| status        | [UpdateEwalletStatusStatus](../models/UpdateEwalletStatusStatus.md) | ✅       | Status of the wallet. One of the following: enable, disable, close. disable - Change to disabled status (DIS). close - Close the wallet. Changes the status to closed (CLO). enable - Change to active status (ACT). |
 
 **Return Type**
 
@@ -754,10 +754,10 @@ Set the maximum balance limit or the minimum balance threshold for an existing w
 
 **Parameters**
 
-| Name         | Type                                                  | Required | Description                                                                                 |
-| :----------- | :---------------------------------------------------- | :------- | :------------------------------------------------------------------------------------------ |
-| request_body | `[AccountLimitsBody](../models/AccountLimitsBody.md)` | ❌       | The request body.                                                                           |
-| wallet_id    | `str`                                                 | ✅       | ID of the Rapyd Wallet that this contact is associated with. String starting with ewallet\_ |
+| Name         | Type                                                | Required | Description                                                                                 |
+| :----------- | :-------------------------------------------------- | :------- | :------------------------------------------------------------------------------------------ |
+| request_body | [AccountLimitsBody](../models/AccountLimitsBody.md) | ❌       | The request body.                                                                           |
+| wallet_id    | `str`                                               | ✅       | ID of the Rapyd Wallet that this contact is associated with. String starting with ewallet\_ |
 
 **Return Type**
 

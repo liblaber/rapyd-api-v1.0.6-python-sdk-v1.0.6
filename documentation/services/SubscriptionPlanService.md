@@ -57,9 +57,9 @@ Create a pricing plan for services.
 
 **Parameters**
 
-| Name         | Type                                      | Required | Description       |
-| :----------- | :---------------------------------------- | :------- | :---------------- |
-| request_body | `[V1PlansBody](../models/V1PlansBody.md)` | ✅       | The request body. |
+| Name         | Type                                    | Required | Description       |
+| :----------- | :-------------------------------------- | :------- | :---------------- |
+| request_body | [V1PlansBody](../models/V1PlansBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -140,10 +140,10 @@ Change or modify a pricing plan for services. You can update a plan's nickname o
 
 **Parameters**
 
-| Name         | Type                                              | Required | Description       |
-| :----------- | :------------------------------------------------ | :------- | :---------------- |
-| request_body | `[PlansPlanIdBody](../models/PlansPlanIdBody.md)` | ✅       | The request body. |
-| plan_id      | `str`                                             | ✅       | ID of the plan.   |
+| Name         | Type                                            | Required | Description       |
+| :----------- | :---------------------------------------------- | :------- | :---------------- |
+| request_body | [PlansPlanIdBody](../models/PlansPlanIdBody.md) | ✅       | The request body. |
+| plan_id      | `str`                                           | ✅       | ID of the plan.   |
 
 **Return Type**
 

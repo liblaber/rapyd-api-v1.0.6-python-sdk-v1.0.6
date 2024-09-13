@@ -48,9 +48,9 @@ Create a checkout page that makes a payment.
 
 **Parameters**
 
-| Name         | Type                                            | Required | Description       |
-| :----------- | :---------------------------------------------- | :------- | :---------------- |
-| request_body | `[V1CheckoutBody](../models/V1CheckoutBody.md)` | ❌       | The request body. |
+| Name         | Type                                          | Required | Description       |
+| :----------- | :-------------------------------------------- | :------- | :---------------- |
+| request_body | [V1CheckoutBody](../models/V1CheckoutBody.md) | ❌       | The request body. |
 
 **Return Type**
 

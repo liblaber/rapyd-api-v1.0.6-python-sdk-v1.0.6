@@ -19,22 +19,22 @@ Retrieve a list of all payments that you have created. You can filter the list w
 
 **Parameters**
 
-| Name                  | Type                                | Required | Description                                                                                                                                                                                                                                      |
-| :-------------------- | :---------------------------------- | :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| created_after         | `str`                               | ❌       | The ID of the payment created before the first payment you want to retrieve. String starting with payment\_.                                                                                                                                     |
-| created_before        | `str`                               | ❌       | The ID of the payment created after the last payment you want to retrieve. String starting with payment\_.                                                                                                                                       |
-| customer              | `[Customer](../models/Customer.md)` | ❌       | Filters the list for payments related to the specified customer.                                                                                                                                                                                 |
-| destination_card      | `str`                               | ❌       | Filters the list for payments related to the specified destination card.                                                                                                                                                                         |
-| ending_before         | `str`                               | ❌       | The ID of the payment created after the last payment you want to retrieve. String starting with payment\_. Deprecated.                                                                                                                           |
-| ewallet               | `str`                               | ❌       | Filters the list for payments related to the specified wallet.                                                                                                                                                                                   |
-| group                 | `bool`                              | ❌       | When true, includes only group payments in the response. When false, excludes group payments from the response. Default is false.                                                                                                                |
-| invoice               | `str`                               | ❌       | Filters according to the invoice. String starting with invoice\_.                                                                                                                                                                                |
-| limit                 | `str`                               | ❌       | The maximum number of payments to return. Range, 1-100. Default is 10.                                                                                                                                                                           |
-| payment_method        | `str`                               | ❌       | Filters the list for payments related to the specified payment method.                                                                                                                                                                           |
-| order                 | `str`                               | ❌       | Filters the list for payments related to the specified order.                                                                                                                                                                                    |
-| starting_after        | `str`                               | ❌       | The ID of a payment in the list. The list begins with the payment that was created next after the payment with this ID. Use this filter to get the next page of results. Relevant when ending*before is not used. String starting with payment*. |
-| subscription          | `str`                               | ❌       | Filters the list for payments related to the specified subscription.                                                                                                                                                                             |
-| merchant_reference_id | `str`                               | ❌       | Merchant-defined ID.                                                                                                                                                                                                                             |
+| Name                  | Type                              | Required | Description                                                                                                                                                                                                                                      |
+| :-------------------- | :-------------------------------- | :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| created_after         | `str`                             | ❌       | The ID of the payment created before the first payment you want to retrieve. String starting with payment\_.                                                                                                                                     |
+| created_before        | `str`                             | ❌       | The ID of the payment created after the last payment you want to retrieve. String starting with payment\_.                                                                                                                                       |
+| customer              | [Customer](../models/Customer.md) | ❌       | Filters the list for payments related to the specified customer.                                                                                                                                                                                 |
+| destination_card      | `str`                             | ❌       | Filters the list for payments related to the specified destination card.                                                                                                                                                                         |
+| ending_before         | `str`                             | ❌       | The ID of the payment created after the last payment you want to retrieve. String starting with payment\_. Deprecated.                                                                                                                           |
+| ewallet               | `str`                             | ❌       | Filters the list for payments related to the specified wallet.                                                                                                                                                                                   |
+| group                 | `bool`                            | ❌       | When true, includes only group payments in the response. When false, excludes group payments from the response. Default is false.                                                                                                                |
+| invoice               | `str`                             | ❌       | Filters according to the invoice. String starting with invoice\_.                                                                                                                                                                                |
+| limit                 | `str`                             | ❌       | The maximum number of payments to return. Range, 1-100. Default is 10.                                                                                                                                                                           |
+| payment_method        | `str`                             | ❌       | Filters the list for payments related to the specified payment method.                                                                                                                                                                           |
+| order                 | `str`                             | ❌       | Filters the list for payments related to the specified order.                                                                                                                                                                                    |
+| starting_after        | `str`                             | ❌       | The ID of a payment in the list. The list begins with the payment that was created next after the payment with this ID. Use this filter to get the next page of results. Relevant when ending*before is not used. String starting with payment*. |
+| subscription          | `str`                             | ❌       | Filters the list for payments related to the specified subscription.                                                                                                                                                                             |
+| merchant_reference_id | `str`                             | ❌       | Merchant-defined ID.                                                                                                                                                                                                                             |
 
 **Return Type**
 
@@ -302,9 +302,9 @@ Create a payment
 
 **Parameters**
 
-| Name         | Type                                            | Required | Description       |
-| :----------- | :---------------------------------------------- | :------- | :---------------- |
-| request_body | `[V1PaymentsBody](../models/V1PaymentsBody.md)` | ✅       | The request body. |
+| Name         | Type                                          | Required | Description       |
+| :----------- | :-------------------------------------------- | :------- | :---------------- |
+| request_body | [V1PaymentsBody](../models/V1PaymentsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -432,10 +432,10 @@ Change or modify a payment when the status of the payment is ACT (active). You c
 
 **Parameters**
 
-| Name         | Type                                                          | Required | Description                                        |
-| :----------- | :------------------------------------------------------------ | :------- | :------------------------------------------------- |
-| request_body | `[PaymentsPaymentIdBody](../models/PaymentsPaymentIdBody.md)` | ✅       | The request body.                                  |
-| payment_id   | `str`                                                         | ✅       | ID of the payment. String starting with payment\_. |
+| Name         | Type                                                        | Required | Description                                        |
+| :----------- | :---------------------------------------------------------- | :------- | :------------------------------------------------- |
+| request_body | [PaymentsPaymentIdBody](../models/PaymentsPaymentIdBody.md) | ✅       | The request body.                                  |
+| payment_id   | `str`                                                       | ✅       | ID of the payment. String starting with payment\_. |
 
 **Return Type**
 

@@ -60,9 +60,9 @@ Create an order for goods. For services, see Create Subscription.
 
 **Parameters**
 
-| Name         | Type                                        | Required | Description       |
-| :----------- | :------------------------------------------ | :------- | :---------------- |
-| request_body | `[V1OrdersBody](../models/V1OrdersBody.md)` | ❌       | The request body. |
+| Name         | Type                                      | Required | Description       |
+| :----------- | :---------------------------------------- | :------- | :---------------- |
+| request_body | [V1OrdersBody](../models/V1OrdersBody.md) | ❌       | The request body. |
 
 **Return Type**
 
@@ -161,10 +161,10 @@ Change or modify an order.
 
 **Parameters**
 
-| Name         | Type                                                  | Required | Description                                    |
-| :----------- | :---------------------------------------------------- | :------- | :--------------------------------------------- |
-| request_body | `[OrdersOrderIdBody](../models/OrdersOrderIdBody.md)` | ✅       | The request body.                              |
-| order_id     | `str`                                                 | ✅       | ID of the order. String starting with order\_. |
+| Name         | Type                                                | Required | Description                                    |
+| :----------- | :-------------------------------------------------- | :------- | :--------------------------------------------- |
+| request_body | [OrdersOrderIdBody](../models/OrdersOrderIdBody.md) | ✅       | The request body.                              |
+| order_id     | `str`                                               | ✅       | ID of the order. String starting with order\_. |
 
 **Return Type**
 
@@ -205,10 +205,10 @@ Make a return against an order. The maximum amount of the return is the amount o
 
 **Parameters**
 
-| Name         | Type                                                    | Required | Description                                    |
-| :----------- | :------------------------------------------------------ | :------- | :--------------------------------------------- |
-| request_body | `[OrderIdReturnsBody](../models/OrderIdReturnsBody.md)` | ✅       | The request body.                              |
-| order_id     | `str`                                                   | ✅       | ID of the order. String starting with order\_. |
+| Name         | Type                                                  | Required | Description                                    |
+| :----------- | :---------------------------------------------------- | :------- | :--------------------------------------------- |
+| request_body | [OrderIdReturnsBody](../models/OrderIdReturnsBody.md) | ✅       | The request body.                              |
+| order_id     | `str`                                                 | ✅       | ID of the order. String starting with order\_. |
 
 **Return Type**
 
@@ -257,10 +257,10 @@ Pay an order.
 
 **Parameters**
 
-| Name         | Type                                            | Required | Description                                    |
-| :----------- | :---------------------------------------------- | :------- | :--------------------------------------------- |
-| request_body | `[OrderIdPayBody](../models/OrderIdPayBody.md)` | ✅       | The request body.                              |
-| order_id     | `str`                                           | ✅       | ID of the order. String starting with order\_. |
+| Name         | Type                                          | Required | Description                                    |
+| :----------- | :-------------------------------------------- | :------- | :--------------------------------------------- |
+| request_body | [OrderIdPayBody](../models/OrderIdPayBody.md) | ✅       | The request body.                              |
+| order_id     | `str`                                         | ✅       | ID of the order. String starting with order\_. |
 
 **Return Type**
 

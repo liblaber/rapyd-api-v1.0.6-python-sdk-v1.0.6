@@ -58,9 +58,9 @@ Adds a customer to merchant
 
 **Parameters**
 
-| Name         | Type                                              | Required | Description       |
-| :----------- | :------------------------------------------------ | :------- | :---------------- |
-| request_body | `[V1CustomersBody](../models/V1CustomersBody.md)` | ✅       | The request body. |
+| Name         | Type                                            | Required | Description       |
+| :----------- | :---------------------------------------------- | :------- | :---------------- |
+| request_body | [V1CustomersBody](../models/V1CustomersBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -154,10 +154,10 @@ Update a customer with customer Id in Path
 
 **Parameters**
 
-| Name         | Type                                              | Required | Description       |
-| :----------- | :------------------------------------------------ | :------- | :---------------- |
-| request_body | `[CustomerRequest](../models/CustomerRequest.md)` | ❌       | The request body. |
-| customer_id  | `str`                                             | ✅       | customer Id       |
+| Name         | Type                                            | Required | Description       |
+| :----------- | :---------------------------------------------- | :------- | :---------------- |
+| request_body | [CustomerRequest](../models/CustomerRequest.md) | ❌       | The request body. |
+| customer_id  | `str`                                           | ✅       | customer Id       |
 
 **Return Type**
 

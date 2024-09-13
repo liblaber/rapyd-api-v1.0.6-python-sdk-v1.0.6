@@ -57,9 +57,9 @@ Create goods or services.
 
 **Parameters**
 
-| Name         | Type                                            | Required | Description       |
-| :----------- | :---------------------------------------------- | :------- | :---------------- |
-| request_body | `[V1ProductsBody](../models/V1ProductsBody.md)` | ✅       | The request body. |
+| Name         | Type                                          | Required | Description       |
+| :----------- | :-------------------------------------------- | :------- | :---------------- |
+| request_body | [V1ProductsBody](../models/V1ProductsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -146,10 +146,10 @@ Change or modify a product or service.
 
 **Parameters**
 
-| Name         | Type                                                            | Required | Description        |
-| :----------- | :-------------------------------------------------------------- | :------- | :----------------- |
-| request_body | `[ProductsProductsIdBody](../models/ProductsProductsIdBody.md)` | ❌       | The request body.  |
-| products_id  | `str`                                                           | ✅       | ID of the product. |
+| Name         | Type                                                          | Required | Description        |
+| :----------- | :------------------------------------------------------------ | :------- | :----------------- |
+| request_body | [ProductsProductsIdBody](../models/ProductsProductsIdBody.md) | ❌       | The request body.  |
+| products_id  | `str`                                                         | ✅       | ID of the product. |
 
 **Return Type**
 

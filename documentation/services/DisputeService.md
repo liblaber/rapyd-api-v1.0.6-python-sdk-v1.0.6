@@ -16,13 +16,13 @@ Retrieve a detailed list of 'dispute' objects.
 
 **Parameters**
 
-| Name           | Type                                                                        | Required | Description                                                                                                  |
-| :------------- | :-------------------------------------------------------------------------- | :------- | :----------------------------------------------------------------------------------------------------------- |
-| starting_after | `str`                                                                       | ❌       | The ID of the dispute created before the first dispute you want to retrieve. String starting with dispute\_. |
-| ending_before  | `str`                                                                       | ❌       | The ID of the dispute created after the last dispute you want to retrieve. String starting with dispute\_.   |
-| limit          | `str`                                                                       | ❌       | The maximum number of disputes to return. Range is 1-100. Default is 10.                                     |
-| status         | `[GetDisputesListByOrgIdStatus](../models/GetDisputesListByOrgIdStatus.md)` | ❌       | Filters the list for disputes with the specified dispute status.                                             |
-| payment        | `str`                                                                       | ❌       | The ID of the payment that is linked to the dispute. String starting with payment\_.                         |
+| Name           | Type                                                                      | Required | Description                                                                                                  |
+| :------------- | :------------------------------------------------------------------------ | :------- | :----------------------------------------------------------------------------------------------------------- |
+| starting_after | `str`                                                                     | ❌       | The ID of the dispute created before the first dispute you want to retrieve. String starting with dispute\_. |
+| ending_before  | `str`                                                                     | ❌       | The ID of the dispute created after the last dispute you want to retrieve. String starting with dispute\_.   |
+| limit          | `str`                                                                     | ❌       | The maximum number of disputes to return. Range is 1-100. Default is 10.                                     |
+| status         | [GetDisputesListByOrgIdStatus](../models/GetDisputesListByOrgIdStatus.md) | ❌       | Filters the list for disputes with the specified dispute status.                                             |
+| payment        | `str`                                                                     | ❌       | The ID of the payment that is linked to the dispute. String starting with payment\_.                         |
 
 **Return Type**
 

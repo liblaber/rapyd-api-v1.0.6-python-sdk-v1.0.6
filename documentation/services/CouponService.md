@@ -57,9 +57,9 @@ create a coupon
 
 **Parameters**
 
-| Name         | Type                            | Required | Description       |
-| :----------- | :------------------------------ | :------- | :---------------- |
-| request_body | `[Coupon](../models/Coupon.md)` | ✅       | The request body. |
+| Name         | Type                          | Required | Description       |
+| :----------- | :---------------------------- | :------- | :---------------- |
+| request_body | [Coupon](../models/Coupon.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -141,10 +141,10 @@ Modify the metadata of a coupon with coupon Id in Path
 
 **Parameters**
 
-| Name         | Type                            | Required | Description                               |
-| :----------- | :------------------------------ | :------- | :---------------------------------------- |
-| request_body | `[Coupon](../models/Coupon.md)` | ✅       | The request body.                         |
-| coupon_id    | `str`                           | ✅       | coupon Id. String starting with coupon\_. |
+| Name         | Type                          | Required | Description                               |
+| :----------- | :---------------------------- | :------- | :---------------------------------------- |
+| request_body | [Coupon](../models/Coupon.md) | ✅       | The request body.                         |
+| coupon_id    | `str`                         | ✅       | coupon Id. String starting with coupon\_. |
 
 **Return Type**
 

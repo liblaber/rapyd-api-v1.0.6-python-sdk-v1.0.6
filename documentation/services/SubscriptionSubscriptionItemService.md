@@ -62,9 +62,9 @@ Create a subscription item and add it to an existing subscription for recurring 
 
 **Parameters**
 
-| Name         | Type                                                              | Required | Description       |
-| :----------- | :---------------------------------------------------------------- | :------- | :---------------- |
-| request_body | `[V1SubscriptionItemsBody](../models/V1SubscriptionItemsBody.md)` | ✅       | The request body. |
+| Name         | Type                                                            | Required | Description       |
+| :----------- | :-------------------------------------------------------------- | :------- | :---------------- |
+| request_body | [V1SubscriptionItemsBody](../models/V1SubscriptionItemsBody.md) | ✅       | The request body. |
 
 **Return Type**
 
@@ -136,10 +136,10 @@ Change or modify a subscription item.
 
 **Parameters**
 
-| Name                 | Type                                                                                              | Required | Description                                               |
-| :------------------- | :------------------------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------- |
-| request_body         | `[SubscriptionItemsSubscriptionItemIdBody](../models/SubscriptionItemsSubscriptionItemIdBody.md)` | ✅       | The request body.                                         |
-| subscription_item_id | `str`                                                                                             | ✅       | ID of the subscription item. String starting with subi\_. |
+| Name                 | Type                                                                                            | Required | Description                                               |
+| :------------------- | :---------------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------- |
+| request_body         | [SubscriptionItemsSubscriptionItemIdBody](../models/SubscriptionItemsSubscriptionItemIdBody.md) | ✅       | The request body.                                         |
+| subscription_item_id | `str`                                                                                           | ✅       | ID of the subscription item. String starting with subi\_. |
 
 **Return Type**
 
@@ -252,10 +252,10 @@ Create a usage record or update an existing usage record where its unique identi
 
 **Parameters**
 
-| Name                 | Type                                                                                    | Required | Description                                               |
-| :------------------- | :-------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------- |
-| request_body         | `[SubscriptionItemIdUsageRecordsBody](../models/SubscriptionItemIdUsageRecordsBody.md)` | ✅       | The request body.                                         |
-| subscription_item_id | `str`                                                                                   | ✅       | ID of the subscription item. String starting with subi\_. |
+| Name                 | Type                                                                                  | Required | Description                                               |
+| :------------------- | :------------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------- |
+| request_body         | [SubscriptionItemIdUsageRecordsBody](../models/SubscriptionItemIdUsageRecordsBody.md) | ✅       | The request body.                                         |
+| subscription_item_id | `str`                                                                                 | ✅       | ID of the subscription item. String starting with subi\_. |
 
 **Return Type**
 

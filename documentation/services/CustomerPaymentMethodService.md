@@ -19,14 +19,14 @@ Retrieve payment methods for a customer
 
 **Parameters**
 
-| Name           | Type                                | Required | Description                                                               |
-| :------------- | :---------------------------------- | :------- | :------------------------------------------------------------------------ |
-| customer_id    | `str`                               | ✅       | customer Id                                                               |
-| category       | `[Category](../models/Category.md)` | ❌       |                                                                           |
-| starting_after | `str`                               | ❌       | The ID of the coupon created before the first coupon you want to retrieve |
-| ending_before  | `str`                               | ❌       | The ID of the coupon created after the last coupon you want to retrieve   |
-| limit          | `str`                               | ❌       | The maximum number of coupons to return. Range is 1-100. Default is 10    |
-| type\_         | `str`                               | ❌       | The type of payment method to find.                                       |
+| Name           | Type                              | Required | Description                                                               |
+| :------------- | :-------------------------------- | :------- | :------------------------------------------------------------------------ |
+| customer_id    | `str`                             | ✅       | customer Id                                                               |
+| category       | [Category](../models/Category.md) | ❌       |                                                                           |
+| starting_after | `str`                             | ❌       | The ID of the coupon created before the first coupon you want to retrieve |
+| ending_before  | `str`                             | ❌       | The ID of the coupon created after the last coupon you want to retrieve   |
+| limit          | `str`                             | ❌       | The maximum number of coupons to return. Range is 1-100. Default is 10    |
+| type\_         | `str`                             | ❌       | The type of payment method to find.                                       |
 
 **Return Type**
 
@@ -64,10 +64,10 @@ Add a payment method to a customer profile
 
 **Parameters**
 
-| Name         | Type                                                                        | Required | Description       |
-| :----------- | :-------------------------------------------------------------------------- | :------- | :---------------- |
-| request_body | `[CustomerIdPaymentMethodsBody](../models/CustomerIdPaymentMethodsBody.md)` | ✅       | The request body. |
-| customer_id  | `str`                                                                       | ✅       | customer Id       |
+| Name         | Type                                                                      | Required | Description       |
+| :----------- | :------------------------------------------------------------------------ | :------- | :---------------- |
+| request_body | [CustomerIdPaymentMethodsBody](../models/CustomerIdPaymentMethodsBody.md) | ✅       | The request body. |
+| customer_id  | `str`                                                                     | ✅       | customer Id       |
 
 **Return Type**
 
@@ -216,11 +216,11 @@ Change or modify a payment method that was stored in a customer profile
 
 **Parameters**
 
-| Name         | Type                                                          | Required | Description       |
-| :----------- | :------------------------------------------------------------ | :------- | :---------------- |
-| request_body | `[CustomerPaymentMethod](../models/CustomerPaymentMethod.md)` | ✅       | The request body. |
-| customer_id  | `str`                                                         | ✅       | customer Id       |
-| pmt_id       | `str`                                                         | ✅       | Pmt Id            |
+| Name         | Type                                                        | Required | Description       |
+| :----------- | :---------------------------------------------------------- | :------- | :---------------- |
+| request_body | [CustomerPaymentMethod](../models/CustomerPaymentMethod.md) | ✅       | The request body. |
+| customer_id  | `str`                                                       | ✅       | customer Id       |
+| pmt_id       | `str`                                                       | ✅       | Pmt Id            |
 
 **Return Type**
 

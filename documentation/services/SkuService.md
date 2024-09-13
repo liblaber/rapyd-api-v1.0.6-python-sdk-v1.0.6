@@ -51,10 +51,10 @@ Change or modify an SKU.
 
 **Parameters**
 
-| Name         | Type                                          | Required | Description                                         |
-| :----------- | :-------------------------------------------- | :------- | :-------------------------------------------------- |
-| request_body | `[SkusSkuIdBody](../models/SkusSkuIdBody.md)` | ❌       | The request body.                                   |
-| sku_id       | `str`                                         | ✅       | ID of the 'sku' object. String starting with sku\_. |
+| Name         | Type                                        | Required | Description                                         |
+| :----------- | :------------------------------------------ | :------- | :-------------------------------------------------- |
+| request_body | [SkusSkuIdBody](../models/SkusSkuIdBody.md) | ❌       | The request body.                                   |
+| sku_id       | `str`                                       | ✅       | ID of the 'sku' object. String starting with sku\_. |
 
 **Return Type**
 
@@ -183,9 +183,9 @@ Create an SKU and attach it to a product.
 
 **Parameters**
 
-| Name         | Type                                    | Required | Description       |
-| :----------- | :-------------------------------------- | :------- | :---------------- |
-| request_body | `[V1SkusBody](../models/V1SkusBody.md)` | ❌       | The request body. |
+| Name         | Type                                  | Required | Description       |
+| :----------- | :------------------------------------ | :------- | :---------------- |
+| request_body | [V1SkusBody](../models/V1SkusBody.md) | ❌       | The request body. |
 
 **Return Type**
 
